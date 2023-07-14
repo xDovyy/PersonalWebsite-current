@@ -1,73 +1,70 @@
+:root {
+    --main-black-color: #1e1f22;
+    --main-white-color: #ffffff;
+    --main-gray-color: #D3D3D3;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Inter;
+}
+
+section, footer, header {
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    display: inline-flex;
 }
 
 section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.menu {
+    list-style: none;
     display: inline-flex;
-    width: 100%;
-    min-width: 1000px;
 }
 
-body {
-    background-color: var(--mainColorLight);
+.menu li a{
+    padding: 16px 32px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--main-black-color);
+    transition: background 0.2s,color 0.2s;
+    border-radius: 50px;
 }
 
-header {
-    width: 100%;
+.menu li a:hover{
+    background-color: var(--main-gray-color);
+}
+
+.logo {
+    background-image: url("../images/logo.png");
     height: 70px;
-    background-color: var(--accentColor);
-    display: flex;
-    position: fixed;
-    box-shadow: 0 -10px 30px 10px #1f1f1f;
+    width: 100px;
+    background-size: cover;
+    margin-top: -10px;
 }
 
-nav,
-footer div{
+nav {
+    width: 100%;
     display: inline-flex;
-    align-self: center;
-    margin-left: 10%;
+    height: 96px;
     align-items: center;
-}
-
-nav div {
-    height: 18px;
-    width: 2px;
-    background-color: var(--mainColorLight);
-    margin: 0 7px 0 7px;
-}
-
-nav a{
-    color: var(--mainColorLight);
-    font-size: 18px;
-}
-
-nav a:hover{
-    color: var(--additionalColor);
+    justify-content: space-between;
+    font-size: large;
 }
 
 footer {
-    padding:0 5px 0 7px;
-    height: 30px;
-    width: 100%;
-    background-color: var(--additionalColor);
-    display: flex;
-    bottom: 0;
+    display: block;
 }
 
-a {
-    text-decoration: none;
-    transition: color, 500ms;
-}
-
-@media only screen and (max-device-width: 1000px) and (min-width: 0px) {
-
-    section {
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-    }
-
+footer nav{
+    border-top: solid;
+    border-color: var(--main-black-color);
+    border-width: 2px;
 }
