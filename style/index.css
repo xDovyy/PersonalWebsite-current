@@ -12,15 +12,17 @@
     background-size: auto 100%;
     background-position-x: 95%;
     padding-bottom: 64px;
+    display: block;
 }
 
 #home div {
     width: 70%;
     max-width: 640px;
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color:var(--main-white-color);
     border-radius: 16px;
-    padding: 64px 16px 0 16px;
+    padding: 64px 16px 64px 16px;
     margin-left: -16px;
+    margin-bottom: 160px;
 }
 
 #home h2, #home p {
@@ -42,11 +44,8 @@
     font-style: normal;
 }
 
-#home p {
-    margin-bottom: 160px;
-}
-
 #home a{
+    background-color: var(--main-white-color);
     padding: 16px 32px;
     text-decoration: none;
     font-weight: 700;
@@ -59,12 +58,29 @@
     background-color: var(--main-gray-color);
 }
 
-#about div:first-child {
-    width: 50%;
+#about {
+    display: flex;
 }
 
-#about div:last-child{
-    width: 50%;
+#about div {
+    width: 25%;
+}
+#about div div{
+    width: 100%;
+    padding-left: 16px;
+}
+
+#about div div h2{
+    font-size: x-large;
+    padding-bottom: 8px;
+}
+
+#about div div p{
+    font-size: large;
+}
+
+#title {
+    font-size: x-large;
 }
 
 #contacts {

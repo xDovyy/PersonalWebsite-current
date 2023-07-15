@@ -32,7 +32,7 @@ section {
     padding: 16px 32px;
     margin: 5px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--main-black-color);
     transition: background 0.2s,color 0.2s;
     border-radius: 50px;
@@ -67,4 +67,9 @@ footer nav{
     border-top: solid;
     border-color: var(--main-black-color);
     border-width: 2px;
+}
+
+footer div {
+    color: var(--main-gray-color);
+    padding: 8px;
 }
