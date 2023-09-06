@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
+<g transform="matrix(9.3809 0 0 9.3809 500.0014 500.0014)" id="411056">
+<g style="" vector-effect="non-scaling-stroke">
+		<g transform="matrix(0.7254 0 0 0.7254 0.1162 0.1162)" id="tight-bounds">
+<path style="stroke: rgb(255,255,255); stroke-opacity: 0; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-71.1555, -71.1555)" d="M 0 71.155 c 0 -39.298 31.857 -71.155 71.155 -71.155 c 39.298 0 71.155 31.857 71.156 71.155 c 0 39.298 -31.857 71.155 -71.156 71.156 c -39.298 0 -71.155 -31.857 -71.155 -71.156 z M 71.155 134.886 c 35.197 0 63.731 -28.533 63.731 -63.731 c 0 -35.197 -28.533 -63.731 -63.731 -63.73 c -35.197 0 -63.731 28.533 -63.73 63.73 c 0 35.197 28.533 63.731 63.73 63.731 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.7254 0 0 0.7254 0.1159 0.1159)" id="tight-bounds">
+<ellipse style="stroke: rgb(255,255,255); stroke-opacity: 0; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" rx="68.30911894919159" ry="68.30911894919159"/>
+</g>
+		<g transform="matrix(1.6317 0 0 1.6317 0.1127 0.1128)" id="text-0">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-15.9, 17.7)" d="M 14.65 0.6 L 14.65 0.6 Q 11.15 0.6 8.4 -1.1 Q 5.65 -2.8 4.05 -5.75 Q 2.45 -8.7 2.45 -12.45 L 2.45 -12.45 Q 2.45 -16.2 4.05 -19.13 Q 5.65 -22.05 8.4 -23.73 Q 11.15 -25.4 14.65 -25.4 L 14.65 -25.4 Q 17.45 -25.4 19.55 -24.35 Q 21.65 -23.3 22.95 -21.4 L 22.95 -21.4 L 22.95 -36 L 29.35 -36 L 29.35 0 L 23.65 0 L 22.95 -3.55 Q 21.75 -1.9 19.78 -0.65 Q 17.8 0.6 14.65 0.6 Z M 16 -5 L 16 -5 Q 19.1 -5 21.08 -7.08 Q 23.05 -9.15 23.05 -12.4 L 23.05 -12.4 Q 23.05 -15.65 21.08 -17.73 Q 19.1 -19.8 16 -19.8 L 16 -19.8 Q 12.95 -19.8 10.95 -17.75 Q 8.95 -15.7 8.95 -12.45 L 8.95 -12.45 Q 8.95 -9.2 10.95 -7.1 Q 12.95 -5 16 -5 Z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.7254 0 0 0.7254 0.1161 0.1161)" id="tight-bounds">
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: none; fill-rule: nonzero; opacity: 1;" x="-71.15535" y="-71.15535" rx="0" ry="0" width="142.3107" height="142.3107"/>
+</g>
+</g>
+</g>
+</svg>

@@ -43,10 +43,10 @@ section {
 }
 
 .logo {
-    background-image: url("../images/logo.png");
-    height: 70px;
-    width: 100px;
-    background-size: cover;
+    background-image: url("../images/logo.svg");
+    height: 80px;
+    width: 80px;
+    background-size: contain;
     margin-top: -10px;
 }
 
