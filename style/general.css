@@ -1,5 +1,5 @@
 :root {
-    --main-venta-color: #010409;
+    --main-venta-color: #11111c;
     --main-black-color: #232b2b;
     --main-white-color: #ffffff;
     --main-gray-color: #D3D3D3;
@@ -21,9 +21,15 @@ section, footer, header {
     background-color: var(--main-black-color);
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -1px 34px 12px rgba(0,0,0,0.34);
+}
+
 .section-div {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     max-width: 60vw;
     width: 100%;
     display: flex;
@@ -33,174 +39,8 @@ section, footer, header {
 }
 
 .section-div h2 {
-    font-size: 64px;
+    font-size: 3rem;
     margin-bottom: 2rem;
-}
-
-.containers {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1rem;
-    height: 24rem;
-}
-
-.containers div:first-child {
-    width: 60%;
-    height: 100%;
-}
-
-.containers div:last-child {
-    width: 40%;
-    height: 100%;
-}
-
-.containers-reverse {
-    gap: 1rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 24rem;
-}
-
-.containers-reverse div:first-child {
-    width: 40%;
-    height: 100%;
-}
-
-.containers-reverse div:last-child {
-    width: 60%;
-    height: 100%;
-}
-
-.container-color {
-    background: rgb(0,1,232);
-    background: linear-gradient(157deg, rgba(0,1,232,1) 0%, rgba(97,0,131,1) 54%, rgba(255,0,0,1) 100%);
-    border-radius: 24px;
-    padding: 2rem;
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.container-color-reverse {
-    background: rgb(0,1,232);
-    background: linear-gradient(157deg, rgba(255,0,0,1) 0%, rgba(97,0,131,1) 54%, rgba(0,1,232,1) 100%);
-    border-radius: 24px;
-    padding: 2rem;
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.container-color a, .container-color-reverse a {
-    font-size: 24px;
-    font-weight: normal;
-}
-
-.container-gray {
-    border-radius: 24px;
-    background-color: var(--main-black-color);
-    padding: 2rem;
-}
-
-.container-black {
-    border-radius: 24px;
-    background: rgb(1,4,9);
-    background: linear-gradient(349deg, rgba(1,4,9,1) 13%, rgba(25,0,70,1) 59%, rgba(1,4,9,1) 92%);
-    padding: 2rem;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.container-black-reverse {
-    border-radius: 24px;
-    background: rgb(1,4,9);
-    background: linear-gradient(162deg, rgba(1,4,9,1) 13%, rgba(25,0,70,1) 59%, rgba(1,4,9,1) 92%);
-    padding: 2rem;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.linkButton {
-    width: 30%;
-    padding: 1rem;
-    align-self: center;
-    margin-top: 4rem;
-}
-
-.linkButton a {
-    margin: 5px;
-    text-decoration: none;
-    color: var(--main-white-color);
-    transition: background 0.2s,color 0.2s;
-    border-radius: 24px;
-    font-size: 24px;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-}
-
-#background-section {
-    background: rgb(0,1,232);
-    background: linear-gradient(157deg, rgba(0,1,232,1) 0%, rgba(97,0,131,1) 54%, rgba(255,0,0,1) 100%);
-    padding: 0;
-}
-
-#background-div {
-    width: 100%;
-    height: 80vh;
-    background: rgb(143,143,143);
-    background: radial-gradient(circle, rgba(143,143,143,0) 0%, rgba(6,6,6,0) 27%, rgba(35,43,43,1) 69%);
-    display: flex;
-    justify-content: center;
-}
-
-#front-section {
-    text-align: center;
-    row-gap: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
-#front-section h2 {
-    font-weight: normal;
-}
-
-#front-section div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.typewriter {
-    width: max-content;
-}
-
-.typewriter h1 {
-    font-size: 64px;
-    text-wrap: normal;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #c40000; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #c40000; }
 }
 
 .menu {
@@ -229,6 +69,60 @@ section {
     margin-top: -10px;
 }
 
+.containers, .containers-reverse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    height: 24rem;
+}
+
+.containers div:first-child, .containers-reverse div:last-child {
+    width: 60%;
+    height: 100%;
+}
+
+.containers div:last-child, .containers-reverse div:first-child {
+    width: 40%;
+    height: 100%;
+}
+
+.container-color, .container-color-reverse {
+    background: rgb(0,1,232);
+    background: linear-gradient(157deg, rgba(0,1,232,1) 0%, rgba(97,0,131,1) 54%, rgba(255,0,0,1) 100%);
+    border-radius: 24px;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container-color-reverse {
+    background: linear-gradient(157deg, rgba(255,0,0,1) 0%, rgba(97,0,131,1) 54%, rgba(0,1,232,1) 100%);
+}
+
+.container-color a, .container-color-reverse a {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.container-gray {
+    border-radius: 24px;
+    background-color: var(--main-black-color);
+}
+
+.container-black, .container-black-reverse {
+    border-radius: 24px;
+    background: rgb(1,4,9);
+    background: linear-gradient(349deg, rgba(1,4,9,1) 13%, rgba(25,0,70,1) 59%, rgba(1,4,9,1) 92%);
+    padding: 2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.container-black-reverse {
+    background: linear-gradient(162deg, rgba(1,4,9,1) 13%, rgba(25,0,70,1) 59%, rgba(1,4,9,1) 92%);
+}
+
 nav {
     width: 100%;
     display: inline-flex;
@@ -240,12 +134,6 @@ nav {
 
 footer {
     display: block;
-}
-
-footer nav{
-    border-top: solid;
-    border-color: var(--main-gray-color);
-    border-width: 2px;
 }
 
 footer div {
@@ -272,22 +160,30 @@ footer div {
 
 @media only screen and (max-width: 750px) {
 
+    .section-div h2 {
+        font-size: 2rem;
+    }
+
+    #front-section h2 {
+        font-size: 1.25rem;
+    }
+
     .menu {
         display: none;
-    }
-
-    .typewriter h1 {
-        font-size: 24px;
-    }
-
-    .linkButton {
-        width: 70%;
     }
 
     .containers {
         flex-direction: column;
         gap: 1rem;
         height: fit-content;
+    }
+
+    .container-color, .container-color-reverse {
+        font-size: 1.25rem;
+    }
+
+    .container-black, .container-black-reverse {
+        font-size: 1.25rem;
     }
 
     .containers div:first-child {
@@ -312,11 +208,6 @@ footer div {
         height: fit-content;
     }
 
-    .containers-reverse div, .containers div {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
     section {
         padding: 5%;
     }
@@ -324,10 +215,6 @@ footer div {
     .section-div {
         max-width: 100%;
         padding: 0;
-    }
-
-    #background-div {
-        height: 50vh;
     }
 
 }
