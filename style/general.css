@@ -1,6 +1,4 @@
-@media (prefers-color-scheme: dark) and (prefers-color-scheme: light) and (prefers-color-scheme: no-preference) {
-
-    :root {
+:root {
         --main-venta-color: #11111c;
         --main-black-color: #232b2b;
         --main-white-color: #ffffff;
@@ -220,4 +218,3 @@
         }
 
     }
-}
