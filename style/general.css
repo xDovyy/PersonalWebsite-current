@@ -145,6 +145,10 @@ footer div {
 
     .section-div {
         max-width: 100%;
+        --main-venta-color: #11111c;
+        --main-black-color: #232b2b;
+        --main-white-color: #ffffff;
+        --main-gray-color: #D3D3D3;
     }
 
 }
@@ -216,5 +220,4 @@ footer div {
         max-width: 100%;
         padding: 0;
     }
-
 }
