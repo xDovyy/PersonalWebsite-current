@@ -1,220 +1,223 @@
 :root {
+    --main-venta-color: #11111c;
+    --main-black-color: #232b2b;
+    --main-white-color: #ffffff;
+    --main-gray-color: #D3D3D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+    color: var(--main-white-color);
+}
+
+section, footer, header {
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    display: inline-flex;
+    background-color: var(--main-black-color);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -1px 34px 12px rgba(0, 0, 0, 0.34);
+}
+
+.section-div {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 60vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-div h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.menu {
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu li a {
+    padding: 16px 32px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--main-white-color);
+    transition: background 0.2s, color 0.2s;
+    border-radius: 50px;
+}
+
+.menu li a:hover {
+    background-color: var(--main-gray-color);
+}
+
+.logo {
+    background-image: url("../images/white.svg");
+    height: 64px;
+    width: 64px;
+    background-size: contain;
+    margin-top: -10px;
+}
+
+.containers, .containers-reverse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    height: 24rem;
+}
+
+.containers div:first-child, .containers-reverse div:last-child {
+    width: 60%;
+    height: 100%;
+}
+
+.containers div:last-child, .containers-reverse div:first-child {
+    width: 40%;
+    height: 100%;
+}
+
+.container-color, .container-color-reverse {
+    background: rgb(0, 1, 232);
+    background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 24px;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container-color-reverse {
+    background: linear-gradient(157deg, rgba(255, 0, 0, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(0, 1, 232, 1) 100%);
+}
+
+.container-color a, .container-color-reverse a {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.container-gray {
+    border-radius: 24px;
+    background-color: var(--main-black-color);
+}
+
+.container-black, .container-black-reverse {
+    border-radius: 24px;
+    background: rgb(1, 4, 9);
+    background: linear-gradient(349deg, rgba(1, 4, 9, 1) 13%, rgba(25, 0, 70, 1) 59%, rgba(1, 4, 9, 1) 92%);
+    padding: 2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.container-black-reverse {
+    background: linear-gradient(162deg, rgba(1, 4, 9, 1) 13%, rgba(25, 0, 70, 1) 59%, rgba(1, 4, 9, 1) 92%);
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    height: 96px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+
+footer {
+    display: block;
+}
+
+footer div {
+    color: var(--main-gray-color);
+    padding: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .section-div {
+        max-width: 100%;
         --main-venta-color: #11111c;
         --main-black-color: #232b2b;
         --main-white-color: #ffffff;
         --main-gray-color: #D3D3D3;
     }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Ubuntu;
-        color: var(--main-white-color);
-    }
+}
+
+@media only screen and (max-width: 1000px) {
 
     section, footer, header {
-        padding-left: 8%;
-        padding-right: 8%;
-        width: 100%;
-        display: inline-flex;
-        background-color: var(--main-black-color);
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    section {
-        display: flex;
-        justify-content: center;
-        box-shadow: 0 -1px 34px 12px rgba(0, 0, 0, 0.34);
-    }
+}
 
-    .section-div {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        max-width: 60vw;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1rem;
-    }
+@media only screen and (max-width: 750px) {
 
     .section-div h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    #front-section h2 {
+        font-size: 1.25rem;
     }
 
     .menu {
-        list-style: none;
-        display: inline-flex;
+        display: none;
     }
 
-    .menu li a {
-        padding: 16px 32px;
-        margin: 5px;
-        text-decoration: none;
-        color: var(--main-white-color);
-        transition: background 0.2s, color 0.2s;
-        border-radius: 50px;
-    }
-
-    .menu li a:hover {
-        background-color: var(--main-gray-color);
-    }
-
-    .logo {
-        background-image: url("../images/white.svg");
-        height: 64px;
-        width: 64px;
-        background-size: contain;
-        margin-top: -10px;
-    }
-
-    .containers, .containers-reverse {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+    .containers {
+        flex-direction: column;
         gap: 1rem;
-        height: 24rem;
-    }
-
-    .containers div:first-child, .containers-reverse div:last-child {
-        width: 60%;
-        height: 100%;
-    }
-
-    .containers div:last-child, .containers-reverse div:first-child {
-        width: 40%;
-        height: 100%;
+        height: fit-content;
     }
 
     .container-color, .container-color-reverse {
-        background: rgb(0, 1, 232);
-        background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
-        border-radius: 24px;
-        padding: 2rem;
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .container-color-reverse {
-        background: linear-gradient(157deg, rgba(255, 0, 0, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(0, 1, 232, 1) 100%);
-    }
-
-    .container-color a, .container-color-reverse a {
         font-size: 1.25rem;
-        font-weight: normal;
-    }
-
-    .container-gray {
-        border-radius: 24px;
-        background-color: var(--main-black-color);
     }
 
     .container-black, .container-black-reverse {
-        border-radius: 24px;
-        background: rgb(1, 4, 9);
-        background: linear-gradient(349deg, rgba(1, 4, 9, 1) 13%, rgba(25, 0, 70, 1) 59%, rgba(1, 4, 9, 1) 92%);
-        padding: 2rem;
-        font-size: 2.25rem;
-        font-weight: bold;
+        font-size: 1.25rem;
     }
 
-    .container-black-reverse {
-        background: linear-gradient(162deg, rgba(1, 4, 9, 1) 13%, rgba(25, 0, 70, 1) 59%, rgba(1, 4, 9, 1) 92%);
-    }
-
-    nav {
+    .containers div:first-child {
         width: 100%;
-        display: inline-flex;
-        height: 96px;
-        align-items: center;
-        justify-content: space-between;
-        font-size: large;
     }
 
-    footer {
-        display: block;
+    .containers div:last-child {
+        width: 100%;
     }
 
-    footer div {
-        color: var(--main-gray-color);
-        padding: 8px;
+    .containers-reverse div:first-child {
+        width: 100%;
     }
 
-    @media only screen and (max-width: 1400px) {
-
-        .section-div {
-            max-width: 100%;
-        }
-
+    .containers-reverse div:last-child {
+        width: 100%;
     }
 
-    @media only screen and (max-width: 1000px) {
-
-        section, footer, header {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
+    .containers-reverse {
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
     }
 
-    @media only screen and (max-width: 750px) {
-
-        .section-div h2 {
-            font-size: 2rem;
-        }
-
-        #front-section h2 {
-            font-size: 1.25rem;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        .containers {
-            flex-direction: column;
-            gap: 1rem;
-            height: fit-content;
-        }
-
-        .container-color, .container-color-reverse {
-            font-size: 1.25rem;
-        }
-
-        .container-black, .container-black-reverse {
-            font-size: 1.25rem;
-        }
-
-        .containers div:first-child {
-            width: 100%;
-        }
-
-        .containers div:last-child {
-            width: 100%;
-        }
-
-        .containers-reverse div:first-child {
-            width: 100%;
-        }
-
-        .containers-reverse div:last-child {
-            width: 100%;
-        }
-
-        .containers-reverse {
-            flex-direction: column;
-            gap: 1rem;
-            height: fit-content;
-        }
-
-        section {
-            padding: 5%;
-        }
-
-        .section-div {
-            max-width: 100%;
-            padding: 0;
-        }
-
+    section {
+        padding: 5%;
     }
+
+    .section-div {
+        max-width: 100%;
+        padding: 0;
+    }
+}

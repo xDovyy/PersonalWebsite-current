@@ -1,110 +1,115 @@
+#home {
+    background: rgb(0, 1, 232);
+    background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
+    padding: 0;
+}
+
+#background-div {
+    width: 100%;
+    height: 80vh;
+    background: rgb(143, 143, 143);
+    background: radial-gradient(circle, rgba(143, 143, 143, 0) 0%, rgba(6, 6, 6, 0) 40%, rgba(35, 43, 43, 1) 90%);
+    display: flex;
+    justify-content: center;
+}
+
 #background-section {
         background: rgb(0, 1, 232);
         background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
         padding: 0;
-    }
+}
 
-    #background-div {
-        width: 100%;
-        height: 80vh;
-        background: rgb(143, 143, 143);
-        background: radial-gradient(circle, rgba(143, 143, 143, 0) 0%, rgba(6, 6, 6, 0) 40%, rgba(35, 43, 43, 1) 90%);
-        display: flex;
-        justify-content: center;
-    }
+#photography {
+    background: rgb(0, 1, 232);
+    background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
+}
 
-    #photography {
-        background: rgb(0, 1, 232);
-        background: linear-gradient(157deg, rgba(0, 1, 232, 1) 0%, rgba(97, 0, 131, 1) 54%, rgba(255, 0, 0, 1) 100%);
-    }
+.typewriter {
+    width: max-content;
+}
 
-    .typewriter {
-        width: max-content;
+.typewriter h1 {
+    font-size: 4rem;
+    text-wrap: normal;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #c40000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
     }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #c40000;
+    }
+}
+
+#front-section {
+    text-align: center;
+    row-gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#front-section h2 {
+    font-weight: normal;
+}
+
+#front-section div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.linkButton {
+    width: 30%;
+    padding: 1rem;
+    align-self: center;
+    margin-top: 4rem;
+}
+
+.linkButton a {
+    margin: 5px;
+    text-decoration: none;
+    color: var(--main-white-color);
+    transition: background 0.2s, color 0.2s;
+    border-radius: 24px;
+    font-size: 1.25rem;
+}
+
+#contacts {
+    background-color: var(--main-venta-color);
+}
+
+@media only screen and (max-width: 750px) {
 
     .typewriter h1 {
-        font-size: 4rem;
-        text-wrap: normal;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid #c40000; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
-        animation: typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-    }
-
-    /* The typing effect */
-    @keyframes typing {
-        from {
-            width: 0
-        }
-        to {
-            width: 100%
-        }
-    }
-
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-        from, to {
-            border-color: transparent
-        }
-        50% {
-            border-color: #c40000;
-        }
-    }
-
-    #front-section {
-        text-align: center;
-        row-gap: 2vh;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    #front-section h2 {
-        font-weight: normal;
-    }
-
-    #front-section div:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        font-size: 1.5rem;
     }
 
     .linkButton {
-        width: 30%;
-        padding: 1rem;
-        align-self: center;
-        margin-top: 4rem;
+        width: 70%;
     }
 
-    .linkButton a {
-        margin: 5px;
-        text-decoration: none;
-        color: var(--main-white-color);
-        transition: background 0.2s, color 0.2s;
-        border-radius: 24px;
-        font-size: 1.25rem;
+    #background-div {
+        height: 50vh;
     }
 
-    #contacts {
-        background-color: var(--main-venta-color);
-    }
-
-    @media only screen and (max-width: 750px) {
-
-        .typewriter h1 {
-            font-size: 1.5rem;
-        }
-
-        .linkButton {
-            width: 70%;
-        }
-
-        #background-div {
-            height: 50vh;
-        }
-
-    }
-
+}
